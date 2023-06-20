@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Início do documento HTML com o idioma definido para Português Brasileiro -->
+<head>
+    <!-- Metadados com o conjunto de caracteres, compatibilidade do navegador e viewport responsivo -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Festa de aniversário do Glaucco</title> <!-- Título da página -->
+
+    <!-- Pré-conexão com a fonte Google e obtenção da fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Conexão com a folha de estilo principal e a biblioteca de animação AOS -->
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body> <!-- Início do corpo do documento -->
+    <!-- Cabeçalho principal da página -->
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo_glaucco.svg" alt="Logo"> <!-- Logo Glaucco -->
+            <!-- Texto do cabeçalho informando sobre o evento -->
+            <p class="hero__text">
+                A festa de aniversário de Glaucco será em <span id="contador"></span>
+            </p>
+            <!-- Barra de informações do evento -->
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua Brasília, Vila Planalto, Brasília - DF
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 150,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        21/05/2024 às 19hrs
+                    </li>
+                </ul>
+                <!-- Botão para garantir a vaga no evento -->
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seções de diferentes eventos com seus detalhes e imagens -->
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <!-- Detalhes do evento -->
+            <div class="event__details">
+                <h2 class="event__details__title">Festa entre amigos</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt et consectetur dolorem labore itaque sint id eaque voluptatibus voluptatum? Doloribus minus sed nulla inventore illum quasi quod! Temporibus, minus sapiente!
+                </p>
+            </div>
+            <!-- Imagem do evento -->
+            <img class="event__image" src="./images/feliz.png" alt="Festa entre amigos">
+        </div>
+    </section>
+
+    <!-- Seção do evento de bolo com a imagem à esquerda -->
+<section class="event event--ui-ux event--image-left">
+    <div class="container" data-aos="fade-left">
+        <!-- Detalhes do evento de bolo -->
+        <div class="event__details">
+            <h2 class="event__details__title">Bolo</h2>
+            <p class="event__details__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia consequuntur quaerat! Excepturi enim harum architecto sapiente ratione eius sint obcaecati esse quos, voluptas similique eaque tenetur ut, et soluta.
+            </p>
+        </div>
+        <!-- Imagem do evento do bolo -->
+        <img class="event__image" src="./images/bolo.png" alt="Bolo">
+    </div>
+</section>
+
+<!-- Seção do evento de Decoração -->
+<section class="event event--data-science">
+    <div class="container" data-aos="fade-right">
+        <!-- Detalhes do evento de Decoração -->
+        <div class="event__details">
+            <h2 class="event__details__title">Decoração</h2>
+            <p class="event__details__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique temporibus, cum voluptate libero nam repellat quos saepe quam ad illo veritatis vero tempore necessitatibus eligendi id quod numquam modi sapiente.
+            </p>
+        </div>
+        <!-- Imagem do evento de Decoração -->
+        <img class="event__image" src="./images/decoracao.jpg" alt="Decoração">
+    </div>
+</section>
+
+<!-- Seção do evento de doces com a imagem à esquerda -->
+<section class="event event--backend event--image-left">
+    <div class="container" data-aos="fade-left">
+        <!-- Detalhes do evento de doces -->
+        <div class="event__details">
+            <h2 class="event__details__title">Doces</h2>
+            <p class="event__details__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis sit mollitia excepturi odit perferendis cumque quae. Velit dignissimos nostrum, delectus commodi magnam amet quae labore blanditiis ipsam, nulla soluta?
+            </p>
+        </div>
+        <!-- Imagem do evento de Doces -->
+        <img class="event__image" src="./images/doces.jpg" alt="Doces">
+    </div>
+</section>
+
+<!-- Importação dos scripts de animação AOS e do script principal -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="scripts/main.js"></script>
+</body> <!-- Fim do corpo do documento -->
+</html> <!-- Fim do documento HTML -->

@@ -1,0 +1,38 @@
+@use '../variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+
+    &:active {
+        transform: scale(.85);
+    }
+
+    &--primary {
+        color: #fff;
+        background-color: variables.$purple;
+    }
+
+    @media (max-width: 767px) {
+
+        width: 100%;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1365px), screen and (min-width: 1366px) and (orientation: portrait) {
+        display: flex;
+        align-items: center;
+    }
+}
