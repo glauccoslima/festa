@@ -46,7 +46,7 @@
         }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
         .container {
             display: block;
         }
@@ -58,6 +58,19 @@
         &__details {
             margin-right: 0;
             margin-bottom: 16px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .container {
+            display: flex;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1365px),
+    screen and (min-width: 1366px) and (orientation: portrait) {
+        .container {
+            display: flex;
         }
     }
 }
