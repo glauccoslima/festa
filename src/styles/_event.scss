@@ -66,11 +66,4 @@
             display: flex;
         }
     }
-
-    @media screen and (min-width: 1024px) and (max-width: 1365px),
-    screen and (min-width: 1366px) and (orientation: portrait) {
-        .container {
-            display: flex;
-        }
-    }
 }
